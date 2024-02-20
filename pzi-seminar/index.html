@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookie Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="nav-bar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('library')">Knjižnica</a></li>
+                <li><a href="#" onclick="showSection('contact')">Podrška</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header for website name -->
+    <header class="website-header">
+        <h2>"On the Line" Knjige</h2>
+    </header>
+
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to Bookie Store</h1>
+            <!-- Your home page content here -->
+        </section>
+
+        <!-- Library Section -->
+        <section id="library" class="hidden">
+            <h1>Library</h1>
+            <!-- Your library content here -->
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="hidden">
+            <h1>Kontaktirajte nas:</h1>
+            <!-- Your contact us content here -->
+            <form>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="title">Naslov:</label><br>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div>
+                    <label for="issue">Vrsta problema:</label>
+                    <p>
+                        <select id="issue" name="issue">
+                            <option value="odaberi">-Odaberi-</option>
+                            <option value="naplatni">Naplatni</option>
+                            <option value="tehnicki">Tehnički</option>
+                            <option value="ostalo">Ostalo</option>
+
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <label1 for="message">Poruka:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
+                <button type="submit" class="send-button">Pošalji</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-box" class="container">
+            <h1>Follow us:</h1>
+            <ul id="social-media-list">
+                <li title="Facebook">
+                    <a class="social-media-links" href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li title="Instagram">
+                    <a class="social-media-links" href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+                </li>
+            </ul>
+            <p id="copyright">
+                &copy;<em> 2024, All rights reserved</em> <br />
+                <strong>Dario Tomislav Ševar</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
