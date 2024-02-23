@@ -24,15 +24,26 @@
     </header>
     <!-- Header for website name -->
     <header class="website-header">
-        <h2>"On the Line" Knjige</h2>
+       <input type="text" id="search-bar">
+       <button id="search-btn">Traži</button>
     </header>
-
 
     <main>
         <!-- Home Section -->
         <section id="home">
-            <h1>Welcome to Bookie Store</h1>
-            <!-- Your home page content here -->
+            <div class="categories">
+                <h4>Kategorije</h4>
+                <ul id="categories-table"/>
+            </div>
+            <div class="best-sellers">
+                <h3>Bestsellers</h3>
+                <div class="best-sellers-list">
+                    <img src="https://assets.mubicdn.net/images/notebook/post_images/31857/images-w1400.jpg?1607290863" alt="1">
+                    <img src="https://assets.mubicdn.net/images/notebook/post_images/31857/images-w1400.jpg?1607290863" alt="2">
+                    <img src="https://assets.mubicdn.net/images/notebook/post_images/31857/images-w1400.jpg?1607290863" alt="3">
+                    <img src="https://assets.mubicdn.net/images/notebook/post_images/31857/images-w1400.jpg?1607290863" alt="4">
+                </div>
+            </div>
         </section>
 
         <!-- Library Section -->
@@ -98,7 +109,7 @@
     </footer>
 
     <!-- Linking external JavaScript file -->
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
